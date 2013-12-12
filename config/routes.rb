@@ -3,7 +3,7 @@ MuseumApp::Application.routes.draw do
   get "paintings", to: 'paintings#index'
   get "artists", to: 'artists#index'
   get "museums", to: 'museums#index'
-  resource :painting
+  resource :paintings
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

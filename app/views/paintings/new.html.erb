@@ -1,0 +1,27 @@
+<h1>Add a new painting</h1>
+<%= form_for @painting do |f| %>
+  <fieldset>
+    <legend>Painting</legend>
+    <div>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.label :artist %>
+      <%= select_tag "artist", options_from_collection_for_select(@artists, "id", "name") %>
+    </div>
+    <div>
+      <%= f.label :museum %>
+      <%= select_tag "museum", options_from_collection_for_select(@museums, "id", "name") %>
+    </div>
+    <div>
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+    </div>
+    <div>
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+    </div>
+  </fieldset>
+  <%= f.submit %>
+<% end %>

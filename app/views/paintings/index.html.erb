@@ -1,0 +1,9 @@
+<h1>Here are a list of Paintings</h1>
+<div>
+  <% @paintings.each do |painting| %>
+    <h2><%= painting.title %></h2>
+    <p><%= painting.description %></p>
+  <% end %>
+
+
+</div>

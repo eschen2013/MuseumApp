@@ -1,7 +1,9 @@
 <h1>Here are a list of Paintings</h1>
 <div>
   <% @paintings.each do |painting| %>
-    <h2><%= painting.title %></h2>
+    <h2>"<%= painting.title %>"</h2>
+    <p><%= painting.artist.name %></p>
+    <p><%= painting.museum.name %></p>
     <p><%= painting.description %></p>
   <% end %>
 

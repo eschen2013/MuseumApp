@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class MuseumControllerTest < ActionController::TestCase
+class MuseumTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
